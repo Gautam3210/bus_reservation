@@ -1,0 +1,72 @@
+.bus-container {
+  text-align: center;
+  padding: 30px;
+  background: #f0f4f8;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  color: #222;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.bus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.bus-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: 0.3s ease, transform 0.3s ease;
+}
+
+.bus-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.bus-card h2 {
+  color: #0077ff;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.bus-card p {
+  color: #444;
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.book-btn {
+  margin-top: 12px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #0077ff;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #0059c9;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .bus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bus-card {
+    padding: 18px;
+  }
+}
